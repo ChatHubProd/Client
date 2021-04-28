@@ -1,0 +1,24 @@
+<div class="{{visible}} login" *ngIf = "!result">
+  <div class="imgdiv">
+    <img src="assets/logoImage.png" alt="">
+  </div>
+  <div class="btndiv">
+    <button (click)="hide()" routerLink = "/login" ruoterLinkActive = "active"> accedi</button>
+  </div>
+</div>
+<div *ngIf = "result">
+
+    <div class="app">
+
+    <div class="leftSide">
+      <app-search></app-search>
+      <app-contacts></app-contacts>
+      <app-profile></app-profile>
+    </div>
+
+    <div class="rightSide">
+      <app-active-user></app-active-user>
+      <app-chat></app-chat>
+    </div>
+  </div>
+</div>

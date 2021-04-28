@@ -1,0 +1,61 @@
+.container
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.chat   
+{
+    height: 80vh;
+}
+
+.chat-input
+{
+    display: flex;
+    height: 10vh;
+    background-color: #022f40;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chat-input button
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #022f40;
+    color: #22bac5;
+    margin: 10px;
+    outline: none;
+    transition: all ease-in-out 0.4s;
+}
+
+.chat-input input
+{
+    width: 80%;
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 0px;
+    border: none;
+    background-color: #91DDE2;
+    color: #022f40;
+    outline: none;
+}
+
+
+.chat-input input::placeholder
+{
+    color: #022f40;
+}
+
+.prechat
+{
+    background-image: url("src/assets/logoImage.png");
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+

@@ -1,0 +1,14 @@
+<div class="container">
+    <img src="assets/logoImage.png" alt="">
+    <div class="login">
+        <h1>Login to chat!</h1>
+        <p *ngIf="logged == false">Credenziali errate</p>
+        <input type="text" placeholder="Nickname" #nick>
+        <input type="password" placeholder="Password" #pass>
+        <button (click)="submit(nick, pass)">Login</button>
+        <a routerLink = "/signup" ruoterLinkActive = "active">Sign Up</a>
+    </div>
+    
+</div>
+
+
