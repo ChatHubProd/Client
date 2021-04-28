@@ -10,7 +10,7 @@ import { UserService } from '../user.service';
 })
 export class ChatComponent implements OnInit {
   messageList:  object[] = [];
-  message: object;
+  message: any;
   result: any;
   activeUser: string;
   cnl: Array<string>;
@@ -24,7 +24,7 @@ export class ChatComponent implements OnInit {
     this.channel = this.cnl[0] + this.cnl[1];
     this.message = {"user": this.result.nickname, "message": message.value, "channel": this.channel};
     this.socketService.sendMessage(this.result.nickname, message.value, this.channel);
-    
+
     console.log("sent: " + this.message)
     message.value="";
     this.message = {};

@@ -12,6 +12,14 @@ export class SocketService {
         this.socket.emit("new-message", nick, msg, cnl);
     }
      getMessage() : Observable<unknown> {
-         return this.socket.fromEvent("resp-message");
+         return this.socket.fromEvent('resp-message');
     }
 }
+/*
+    sendMessage(nick: string, msg: string, cnl: string){
+        this.socket.emit("new-message", nick, msg, cnl);
+    }
+     getMessage() : Observable<unknown> {
+         return this.socket.fromEvent("resp-message");
+    }
+*/
