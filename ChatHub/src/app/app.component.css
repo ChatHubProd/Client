@@ -1,0 +1,102 @@
+app-login, app-sign-up
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  background-color: blue;
+}
+
+
+.app
+{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: blueviolet;
+}
+
+
+.leftSide
+{
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: #9335F8;
+}
+
+app-search
+{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: #7900FA;
+  align-items: center;
+  justify-content: center;
+}
+
+
+app-contacts
+{
+  display: flex;
+  width: 100%;
+  height: 80%;
+  background-color: yellow;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+app-contacts::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+
+app-profile
+{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #7900FA;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.rightSide
+{
+  display: block;
+  width: 70%;
+  height: 100%;
+  background-color:gray;
+}
+
+
+app-active-user
+{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+app-chat
+{
+  display: flex;
+  width: 100%;
+  height: 90%;
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+}

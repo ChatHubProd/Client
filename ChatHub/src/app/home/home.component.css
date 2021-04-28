@@ -1,0 +1,181 @@
+.login
+{
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: #20bac5;
+}
+
+.login .imgdiv
+{
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .imgdiv img
+{
+  width: 50%;
+}
+
+
+
+.login .btndiv
+{
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.login button
+{
+  width: 200px;
+  height: 75px;
+  font-size: 48px;
+  padding: 10px;
+  border-radius: 0px;
+  border: none;
+  margin-bottom: 50px;
+  background-color: #022f40;
+  color: #fbfbff;
+  transition: all ease-in-out 0.3s;
+}
+
+.login button:hover
+{
+  margin-bottom: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide
+{
+  display: none;
+}
+
+
+
+app-login, app-sign-up
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  background-color: #22bac5;
+}
+
+
+.app
+{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #22bac5;
+}
+
+
+.leftSide
+{
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: #22bac5;
+}
+
+app-search
+{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: #22bac5;
+  color: #022f40;
+  align-items: center;
+  justify-content: center;
+}
+
+
+app-contacts
+{
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-color: #fbfbff;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+app-contacts::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+
+app-profile
+{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #22bac5;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.rightSide
+{
+  display: block;
+  width: 70%;
+  height: 100%;
+  background-color: #22bac5;
+}
+
+
+app-active-user
+{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: #022f40;
+  align-items: center;
+  justify-content: center;
+}
+
+app-chat
+{
+  display: flex;
+  width: 100%;
+  height: 90%;
+  background-color: #22bac5;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,36 @@
+.chat
+{
+    display: flex;
+    width: 80%;
+    height: 10%;
+    align-items: center;
+    justify-content: left;
+    margin: 15px;
+    margin-left: 30px;
+}
+
+.chat .img
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    background-image: url('/assets/proPic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.chat a
+{
+    color: #022f40;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.chat
+{
+    width: 80%;
+    border-bottom: solid 1px #022f40;
+}
