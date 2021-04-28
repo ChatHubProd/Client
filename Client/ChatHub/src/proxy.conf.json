@@ -1,7 +1,0 @@
-{
-    "/api/*": {
-        "target": "https://3000-lime-python-o2tst2tv.ws-eu03.gitpod.io/",
-        "secure": false,
-        "logLevel": "debug"
-    }
-}
