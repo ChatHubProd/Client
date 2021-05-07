@@ -9,17 +9,9 @@ export class SocketService {
     constructor(private socket: Socket) { }
 
     sendMessage(nick: string, msg: string, cnl: string){
-        this.socket.emit("new-message", nick, msg, cnl);
+        this.socket.emit('new-message', nick, msg, cnl);
     }
      getMessage() : Observable<unknown> {
          return this.socket.fromEvent('resp-message');
     }
 }
-/*
-    sendMessage(nick: string, msg: string, cnl: string){
-        this.socket.emit("new-message", nick, msg, cnl);
-    }
-     getMessage() : Observable<unknown> {
-         return this.socket.fromEvent("resp-message");
-    }
-*/

@@ -13,7 +13,7 @@ export class selectedChat {
 
   selectedchat(nick: string)
   {
-    const url = `https://3000-scarlet-sturgeon-358ad7wk.ws-eu03.gitpod.io/userInfo/${nick}`
+    const url = `https://3000-salmon-galliform-fv85ugfv.ws-eu03.gitpod.io/userInfo/${nick}`
     return this.http.get(url);
   }
 
