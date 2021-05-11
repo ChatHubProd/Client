@@ -5,9 +5,24 @@
     height: 100%;
 }
 
-.chat   
+.chat
 {
+    display: block;
     height: 80vh;
+    overflow: auto;
+}
+
+
+.me
+{
+  width: fit-content;
+}
+
+
+
+.msgs
+{
+  background-color: beige;
 }
 
 .chat-input

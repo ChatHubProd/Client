@@ -16,7 +16,9 @@ import { ActiveUserComponent } from './active-user/active-user.component';
 import { HomeComponent } from './home/home.component';
 import { SocketService } from './socket-service.service';
 
-const config: SocketIoConfig = { url: 'https://3000-violet-rodent-o40rwvw0.ws-eu03.gitpod.io/', options: {} };
+const config: SocketIoConfig = { url: 'https://3000-salmon-horse-a70kyozz.ws-eu04.gitpod.io/', options: { transports: ['websocket', 'polling', 'flashsocket'] } };
+
+
 
 @NgModule({
   declarations: [

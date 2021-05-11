@@ -1,19 +1,21 @@
 <div class="container">
 
-    <div *ngIf="!activeUser" class="prechat">
-    </div>
+  <div *ngIf="!activeUser" class="prechat">
+  </div>
 
-    <div *ngIf="activeUser" class="chat">
-        <div *ngFor = "let message of messageList">
-           {{message.nickname}} : {{message.message}} : {{message.channel}}
-          </div>
+  <div *ngIf="activeUser" class="chat">
+    <div class="msgs" *ngFor="let message of messageList">
+      <p *ngIf = "message.nickname == result.nickname" class="me">{{message.nickname}} : {{message.message}}</p>
+      <p *ngIf = "message.nickname == activeUser" class="others">{{message.nickname}} : {{message.message}}</p>
     </div>
-    <div *ngIf="activeUser" class="chat-input">
-        <button class="add material-icons">attach_file</button>
-        <input placeholder="Write something nice..." type="text" (keyup)="$event.keyCode == 13 && sendMessage(message)" #message>
-        <button class="add material-icons">tag_faces</button>
-        <button class="add material-icons">photo_camera</button>
-        <button class="add material-icons">mic</button>
-        <button class="add material-icons" (click)="sendMessage(message)">send</button>
-    </div>
+  </div>
+  <div *ngIf="activeUser" class="chat-input">
+    <button class="add material-icons">attach_file</button>
+    <input placeholder="Write something nice..." type="text" (keyup)="$event.keyCode == 13 && sendMessage(message)"
+      #message>
+    <button class="add material-icons">tag_faces</button>
+    <button class="add material-icons">photo_camera</button>
+    <button class="add material-icons">mic</button>
+    <button class="add material-icons" (click)="sendMessage(message)">send</button>
+  </div>
 </div>

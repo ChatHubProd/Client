@@ -14,4 +14,8 @@ export class SocketService {
      getMessage() : Observable<unknown> {
          return this.socket.fromEvent('resp-message');
     }
+
+    changeChannel(nick: string, cnl:string){
+      this.socket.emit('change-channel', nick, cnl);
+    }
 }
