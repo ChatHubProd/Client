@@ -1,3 +1,16 @@
+<div *ngIf="contacts">
+<div class="chat">
+    <div class="img1">
+        <div class="img">
+        </div>
+    </div>
+    <div class="chatin">
+        <a (click)="choose(contact)" #contact>{{contacts}}</a>
+    </div>
+</div>
+</div>
+
+
 <div class="chat" *ngFor='let chat of chats'>
     <div class="img1">
         <div class="img">

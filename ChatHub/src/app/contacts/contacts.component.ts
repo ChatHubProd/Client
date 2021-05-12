@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { selectedChat } from '../selected-chat.service';
 import { SocketService } from '../socket-service.service';
 import { UserService } from '../user.service';
+import { SearchContactsService } from '../search-contacts.service';
 
 @Component({
   selector: 'app-contacts',
@@ -17,18 +18,19 @@ export class ContactsComponent implements OnInit {
   chats: Array<any>;
   channels: Array<string>;
   cnl: string;
+  contacts: Array<string>;
 
-  constructor(private user: UserService, private chat : selectedChat, private socketService: SocketService) { }
+  constructor(private user: UserService, private chat : selectedChat, private socketService: SocketService, private searchContacts: SearchContactsService) { }
 
   choose(Schat: HTMLLabelElement)
   {
     this.chat.newSelectedChat(Schat);
-    console.log(Schat);
-    this.channels = [Schat , this.result.nickname];
+    this.channels = [Schat.innerText , this.result.nickname];
     this.channels.sort();
     this.cnl = this.channels[0] + this.channels[1];
     console.log(this.cnl);
     this.socketService.changeChannel(this.result.nickname, this.cnl);
+
   }
 
 
@@ -45,6 +47,8 @@ export class ContactsComponent implements OnInit {
     this.userObs = this.user.userinfo(this.result.nickname);
     this.userObs.subscribe(this.getData);
 
+
+    this.searchContacts.sharedSearchContacts.subscribe(message1 => this.contacts = message1);
   }
 
 }

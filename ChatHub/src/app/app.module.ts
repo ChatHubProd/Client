@@ -16,7 +16,7 @@ import { ActiveUserComponent } from './active-user/active-user.component';
 import { HomeComponent } from './home/home.component';
 import { SocketService } from './socket-service.service';
 
-const config: SocketIoConfig = { url: 'https://3000-salmon-horse-a70kyozz.ws-eu04.gitpod.io/', options: { transports: ['websocket', 'polling', 'flashsocket'] } };
+const config: SocketIoConfig = { url: 'https://3000-amaranth-bass-z5vt0s2f.ws-eu04.gitpod.io/', options: { transports: ['websocket', 'polling', 'flashsocket'] } };
 
 
 
